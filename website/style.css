@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Oswald', sans-serif;
+    background-color: #e6f0ff;
+}
+
+h1 {
+    font-size: xx-large;
+}
+
+h2 {
+    font-size: x-large;
+}
+
+.header {
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    color: whitesmoke;
+    margin-bottom: 40px;
+}
+
+.zip,
+.feel {
+    margin-bottom: 40px;
+}
+
+#zip {
+    margin-right: 20px;
+}
+
+
+
+input,
+textarea {
+    vertical-align: middle;
+}
+
+input,
+.myInput {
+    padding: 10px;
+    font-size: large;
+}
+
+button {
+    font-size: x-large;
+    border-radius: 5px;
+    padding: 25px;
+    margin-bottom: 40px;
+    background-color: #002966;
+    color: whitesmoke;
+    box-shadow: 2px 2px 6px black;  
+}
+
+button:hover{
+    transition: all 0.3s ease-in-out;
+background-color: #3eb991;
+}
+
+
+.title {
+    margin-bottom: 20px;
+    font-size: x-large;
+    text-align: center;
+}
+
+#entryHolder {
+    font-size: large;
+    width: 400px;
+    padding: 20px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px black;
+}
+
+#date,
+#temp {
+    margin-bottom: 10px;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    color: whitesmoke;
+    margin-top: 40px;
+}
+
