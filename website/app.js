@@ -22,7 +22,7 @@ getWeather(baseURL,zipCode,apiKey)
     .then(function(data){
         console.log(data);
 
-        postData('/add', {
+        postData('http://localhost:8000/add', {
             date: d,
             temperature: data.main.temp,
             content: feelings,
@@ -66,7 +66,7 @@ const postData = async (url = '', data ={}) => {
 
 //function to get project data
 const updateUI = async() => {
-    const request = await fetch ('/all');
+    const request = await fetch ('http://localhost:8000/all');
     try{
         const allData = await request.json();
         document.getElementById('date').innerHTML = `Date: ${allData.date}`;
