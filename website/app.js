@@ -8,9 +8,7 @@ let d = new Date();
 //API KEY for OpenWeatherMap API
 const apiKey = '&appid=f2f9b5823c3ff5bb4403e7a47adc9946';
 const baseURL = 'https://api.openweathermap.org/data/2.5/weather?zip=';
-let apiURL =
-    "http://api.openweathermap.org/data/2.5/weather?zip=&appid=f2f9b5823c3ff5bb4403e7a47adc9946";
-console.log(apiURL);
+
 
 // Event listener to add function to existing HTML DOM element
 document.getElementById('generate').addEventListener('click', onGenerate);
@@ -71,10 +69,11 @@ const updateUI = async() => {
     const request = await fetch ('/all');
     try{
         const allData = await request.json();
-        document.getElementById('date').innerHTML = `Date: ${allData[0].date}`;
-        document.getElementById('temp').innerHTML = `Tempurature: ${allData[0].temp}`;
-        document.getElementById('content').innerHTML = `I feel: ${allData[0].content}`;
+        document.getElementById('date').innerHTML = `Date: ${allData.date}`;
+        document.getElementById('temp').innerHTML = `Tempurature: ${allData.temp}`;
+        document.getElementById('content').innerHTML = `I feel: ${allData.content}`;
     }catch(error){
         console.log("error", error);
     }
 }
+
