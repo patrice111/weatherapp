@@ -50,5 +50,5 @@ function addData (request, response){
         temp: request.body.temp,
         content: request.body.content
     }
-    projectData.push(newEntry);
+    projectData = newEntry;
 }
