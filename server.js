@@ -47,7 +47,7 @@ function addData (request, response){
     console.log(request.body);
     newEntry = {
         date: request.body.date,
-        temp: request.body.temp,
+        temp: request.body.temperature,
         content: request.body.content
     }
     projectData = newEntry;
