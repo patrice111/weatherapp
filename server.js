@@ -32,7 +32,7 @@ function listening() {
 }
 
 // GET route
-app.get('http://localhost:8000/all', sendData);
+app.get('/all', sendData);
 
 function sendData(request,response) {
     response.send(projectData);
@@ -41,7 +41,7 @@ function sendData(request,response) {
 
 // POST route 
 
-app.post('http://localhost:8000/add', addData);
+app.post('/add', addData);
 
 function addData (request, response){
     console.log(request.body);
