@@ -7,23 +7,23 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: 'Oswald', sans-serif;
-    background-color: #e6f0ff;
+    font-family: 'Comfortaa', cursive;
+    background-image: url("sky.jpg");
 }
 
 h1 {
-    font-size: xx-large;
+    font-size: xxx-large;
 }
 
 h2 {
-    font-size: x-large;
+    font-size: large;
 }
 
 .header {
     width: 100%;
     text-align: center;
-    background-color: black;
-    color: whitesmoke;
+    background:rgba(255,255,255,0.1);
+    color: #fed3da;
     margin-bottom: 40px;
 }
 
@@ -34,6 +34,11 @@ h2 {
 
 #zip {
     margin-right: 20px;
+    color: #5a5bb5;
+    background-color: #fed3da;
+    border: 2px solid #6667ba;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px #6667ba;
 }
 
 
@@ -41,6 +46,16 @@ h2 {
 input,
 textarea {
     vertical-align: middle;
+    color: #5a5bb5;
+    background-color: #fed3da;
+    border: 2px solid #6667ba;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px #6667ba;
+    
+}
+
+::placeholder {
+    color: #c979ac;
 }
 
 input,
@@ -54,31 +69,34 @@ button {
     border-radius: 5px;
     padding: 25px;
     margin-bottom: 40px;
-    background-color: #002966;
-    color: whitesmoke;
-    box-shadow: 2px 2px 6px black;  
+    color: #fed3da;
+    background-color: #6667ba;
+    box-shadow: 3px 3px 5px #6667ba;  
 }
 
 button:hover{
     transition: all 0.3s ease-in-out;
-background-color: #3eb991;
+    color: #fff;
+    background-color: #ea81a9;
 }
 
 
 .title {
     margin-bottom: 20px;
+    color: #5a5bb5;
     font-size: x-large;
     text-align: center;
 }
 
 #entryHolder {
     font-size: large;
-    width: 400px;
+    width: 500px;
     padding: 20px;
-    background-color: white;
-    border: 2px solid black;
+    color: #5a5bb5;
+    background-color: #fed3da;
+    border: 2px solid #6667ba;
     border-radius: 10px;
-    box-shadow: 3px 3px 5px black;
+    box-shadow: 3px 3px 5px #6667ba;
 }
 
 #date,
@@ -89,8 +107,8 @@ background-color: #3eb991;
 footer {
     width: 100%;
     text-align: center;
-    background-color: black;
-    color: whitesmoke;
+    background:rgba(255,255,255,0.1);
+    color: #6667ba;
     margin-top: 40px;
 }
 
