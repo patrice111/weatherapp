@@ -18,17 +18,18 @@ function onGenerate(e){
 const zipCode = document.getElementById('zip').value;  
 const feelings = document.getElementById('feelings').value;
 getWeather(baseURL,zipCode,apiKey)
-
-    .then(function(data){
-        console.log(data);
-
-        postData('http://localhost:8000/add', {
-            date: d,
-            temperature: data.main.temp,
-            content: feelings,
-        });
-        updateUI();
-    });
+  .then(function(data){
+      //Adding data to POST request
+      console.log(data);
+      postData('http://localhost:8000/add', {
+          date: d,
+          temperature: data.main.temp,
+          content: feelings,
+      })
+  })
+  .then(function() {
+      updateUI()
+  });
 }
 
 //Function to get web api data
